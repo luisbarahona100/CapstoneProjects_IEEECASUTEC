@@ -1,10 +1,18 @@
-PASO 1: Ingresar al repositorio principal
+PASO 1: Clonar repositorio cc
 cd CODE_PC
 
 PASO 2: CREAR Y ACTIVAR AMBIENTE VIRTUAL
+###EN WINDOWS
 cd CODE_PC
-python -m venv pc_env
-pc_env\Scripts\activate
+python -m venv pc_env     #crear
+pc_env\Scripts\activate   #activar
+
+###EN LINUX
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3-venv -y
+cd Code_RaspberryPi3ModelB
+python3 -m venv raspi_env  #crear
+source venv/bin/activate   #activar
 
 PASO 3: Actualizar pip
 python.exe -m pip install --upgrade pip setuptools wheel
