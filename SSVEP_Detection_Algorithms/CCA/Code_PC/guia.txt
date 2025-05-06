@@ -1,0 +1,14 @@
+PASO 1: Ingresar al repositorio principal
+cd CODE_PC
+
+PASO 2: CREAR Y ACTIVAR AMBIENTE VIRTUAL
+cd CODE_PC
+python -m venv pc_env
+pc_env\Scripts\activate
+
+PASO 3: Actualizar pip
+python.exe -m pip install --upgrade pip setuptools wheel
+
+PASO 4: INSTALAR LIBRERÍAS
+cd CODE_PC
+pip install -r requirements.txt
